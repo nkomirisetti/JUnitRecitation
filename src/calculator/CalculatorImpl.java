@@ -1,14 +1,17 @@
 package calculator;
 
 public class CalculatorImpl implements Calculator {
-
+	
+	public CalculatorImpl() {
+		
+	}
 	
 	public boolean isNumberPositive(int num) {
 		return num < 0;
 	}
 
 	public int addNumber(int a, int b) {
-		return a + b;
+		return a + a;
 	}
 
 	public int addNumber(int a, int b, int c) {
@@ -49,7 +52,7 @@ public class CalculatorImpl implements Calculator {
 		for (int i = 0; i < upperBound; i++) {
 			runningTotal += innerTerm;
 		}
-
+		
 		return runningTotal;
 	}
 
