@@ -55,4 +55,12 @@ public class CalculatorImpl implements Calculator {
 		int cSquared = power(a, 2) + power(a, 2);
 		return squareRoot(cSquared);
 	}	
+	
+	public double positiveQuadraticFormula(int a, int b, int c){
+		return (-c + Math.sqrt(Math.pow(b,2)-(4*a*b)))/(2*a);	
+	}
+	
+	public double negativeQuadraticFormula(int a, int b, int c){
+		return (-b - Math.sqrt(Math.pow(b,2)-(4*a*c)))/(a);
+	}
 }
