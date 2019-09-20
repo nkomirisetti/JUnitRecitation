@@ -9,8 +9,6 @@ public interface Calculator {
 	int divideNumbers(int a, int b);
 	int squareRoot(int num);
 	int power(int num, int power);
-	int constantSeries(int upperBound, double innerTerm);
-	int arithmeticSeries(int upperBound);
 	int geometricSeries(int upperBound, int innerTerm);
 	int pythagoreanTheorem(int a, int b);
 }
