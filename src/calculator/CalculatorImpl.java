@@ -47,19 +47,6 @@ public class CalculatorImpl implements Calculator {
 		return num;
 	}
 
-	public int constantSeries(int upperBound, double innerTerm) {
-		int runningTotal = 0;
-		for (int i = 0; i < upperBound; i++) {
-			runningTotal += innerTerm;
-		}
-		
-		return runningTotal;
-	}
-
-	public int arithmeticSeries(int upperBound) {
-		return (upperBound * (upperBound + 1)) / 2;
-	}
-
 	public int geometricSeries(int upperBound, int innerTerm) {
 		return (1 - power(innerTerm, upperBound)) / (1 - innerTerm);
 	}
